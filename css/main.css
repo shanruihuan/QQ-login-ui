@@ -1,0 +1,247 @@
+﻿/*整体面板*/
+.loginPanel {
+        width: 420px;
+        height: 332px;
+        left: 625px;
+        top: 188px;
+        position: absolute;
+        border: 1px solid #ccc;
+        background: #f6f6f6;
+        -moz-border-radius: 1px;
+        -webkit-border-radius: 1px;
+        border-radius: 5px;
+        -moz-box-shadow: 0 0 8px #000;
+        -webkit-box-shadow: 0 0 8px #000;
+        box-shadow: 0 3px 19px -7px #000;
+    }
+#penguin{
+    display: none;
+    width: 37px;
+    height: 44px;
+    background: url(../images/penguin.png) 1px 1px no-repeat;
+}
+/*最小、最大、关闭功能*/
+.ui_minmaxclose{
+    float: right;
+    position:absolute;
+    right:0px;
+    overflow: hidden;
+    z-index: 2;
+}
+.ui_minmaxclose span{
+    cursor:pointer;
+    line-height: 24px;
+    text-align: center;
+    float: right;
+    display: inline-block;
+    width: 20px;
+    height: 24px;
+    padding: 2px 4px 0;
+}
+.ui_minmaxclose span:hover{background-color: #009fd7;}
+#ui_boxyClose:hover{background-color: #e22525;}
+/*logo及背景*/
+.bkg{
+    width: 432px;
+    height: 184px;
+    background: url(../images/logo.png) 169px 77px no-repeat,url(../images/bg.jpg) 0 0 no-repeat;
+}
+.bkg img{
+    width: 116px;
+    height: 53px;
+    margin-top: 72px;
+    margin-left: 154px;
+}
+.login_logo_webqq {
+    cursor: move;
+    overflow: hidden;
+}
+
+/*输入框*/
+.inputs {
+    margin-left: 48px;
+    margin-top: 10px;
+}
+.head{
+    float: left;
+    margin-right: 12px;
+}
+.head img{z-index: 1;}
+.inputs .sign-input {
+    padding-bottom: 5px;
+}
+.inputs .sign-input .text{
+    font-size: 11px;
+    margin-left:10px;
+    text-decoration: none;
+    color: #09a3dc;
+}
+
+.inputs .sign-input input {
+    width: 170px;
+    border: 1px #ccc solid;
+    color: #868686;
+    font-size: 12px;
+    padding: 6px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -khtml-border-radius: 3px;
+    -border-radius: 3px;
+    outline: none;
+}
+.sel {
+    margin-right: 50px;
+    font-size: 10px;
+    color: #4f5354;
+    text-align:center;
+    display: inline-block;
+}
+.sel input{
+    vertical-align:middle;
+    margin-top:0;
+    -webkit-appearance: none;
+    appearance: none;
+    background: #fff url(../images/blue.png);
+    height: 11px;
+    width: 11px;
+    background-size: 63px 11px;
+}
+.sel input[type="checkbox"]:hover {
+  background-position: -13px 0;
+  outline: none;
+}
+.sel input[type="checkbox"]:checked {
+  background-position: -26px 0;
+}
+/*登录按钮*/
+.btn {
+    background-color:#08a3db;
+    width: 182px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 10px;
+}
+
+/*状态*/
+.login-state-trigger {
+    cursor: pointer;
+    display: block;
+    float: left;
+    height: 16px;
+    overflow: hidden;
+    width: 15px;
+    margin: 4px 0 0 0;
+    z-index: 999;
+}
+
+.login-state-trigger2 {
+    position: absolute;
+    margin: -59px 0 0 -27px;
+    z-index: 999;
+}
+
+.login-state-down {
+    background: url("../images/ptlogin.png") no-repeat scroll 0 -22px transparent;
+    float: left;
+
+    margin-top: 5px;
+    overflow: hidden;
+    text-indent: -999em;
+
+}
+
+.login-state-show {
+    float: left;
+    height: 14px;
+    overflow: hidden;
+    text-indent: -999em;
+    width: 14px;
+    margin: 1px 4px 0 0;
+}
+
+.login-state-txt {
+    float: left;
+    margin-left: 5px;
+    font-size: 12px;
+    >line-height:18px!important;
+}
+
+.login-state .callme {
+    background: url("../images/ptlogin.png") -72px 0 no-repeat;
+}
+
+.login-state .online {
+    background: url("../images/ptlogin.png") 0 0 no-repeat;
+}
+
+.login-state .away {
+    background: url("../images/ptlogin.png") -18px 0 no-repeat;
+}
+
+.login-state .busy {
+    background: url("../images/ptlogin.png") -36px 0 no-repeat;
+}
+
+.login-state .silent {
+    background: url("../images/ptlogin.png") -108px 0 no-repeat;
+}
+
+.login-state .hidden {
+    background: url("../images/ptlogin.png") -54px 0 no-repeat;
+}
+
+.statePanel {
+    display: none;
+    position: absolute;
+    right: 210px;
+    top: 278px;
+    z-index: 10;
+    margin: 0;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ccc;
+    padding: 0;
+    width: 100px;
+    height: 133px;
+    overflow: hidden;
+    background: white;
+    font-size: 12px;
+    line-height: 1.5;
+    box-shadow:0 3px 19px -7px #000;
+}
+.statePanel .statePanel_li {
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 3px 0;
+    width: 100px;
+    height: 16px;
+    line-height: 16px;
+    overflow: hidden;
+    zoom: 1;
+    cursor: pointer;
+    background-color: #f6f6f6;
+}
+
+.stateSelect_icon {
+    float: left;
+    margin: 2px 0 0 5px;
+    width: 17px;
+    height: 15px;
+    overflow: hidden;
+}
+
+.stateSelect_text {
+    margin: 0 0 0 25px;
+    font-size: 10px;
+}
+
+.bottomDiv {
+    margin-left: 141px;
+    margin-top: 10px;
+}
+

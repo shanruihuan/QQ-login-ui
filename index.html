@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>QQ登录框</title>
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="js/jquery.1.10.2.js" type="text/javascript"></script>
+    <script src="js/drag.js"></script>
+</head>
+<body>
+    <div class="loginPanel" id="loginPanel">
+        <div id="penguin"></div>
+        <div class="ui_minmaxclose">
+            <span id="ui_boxyClose"><img src="images/close.png" alt="关闭"></span>
+            <span><img src="images/min.png" alt="最小化"></span>
+            <span style="display: none;"><img src="images/max.png" alt="最大化"></span>
+        </div>
+        <div class="login_logo_webqq">
+            <div class="bkg"></div>
+        </div>
+        <div class="inputs">
+            <div class="head"><img src="images/head.jpg"></div>
+            <div class="sign-input"><span><input autocomplete="on" name="u" id="u" type="text" style="ime-mode: disabled" class="input01" tabindex="1" placeholder="QQ号码/手机/邮箱"/></span><a href="https://ssl.zc.qq.com/chs/index.html?from=client&ptlang=2052&regkey=D88334DB6EA2B23E1EFDF8FAE49882CE3DFF4920F3CAB53FC555C59FDE5CB8E7&ADUIN=0&ADSESSION=0&ADTAG=CLIENT.QQ.5385_NewAccount_Btn.0&ADPUBNO=26450" target="_blank" class="text">注册账号</a></div>
+            <div class="sign-input"><span><input name="p" id="p" maxlength="16" type="password" class="input01" tabindex="2" placeholder="密码"}" /></span><a href="https://aq.qq.com/cn2/findpsw/pc/pc_find_pwd_input_account?source_id=1003&ptlang=2052&aquin" target="_blank" class="text">找回密码</a></div>
+            <div class="sel"><input type="checkbox"><span>记住密码</span></div>
+            <div class="sel"><input type="checkbox"><span>自动登录</span></div>
+        </div>
+        <div class="bottomDiv">
+            <div class="btn"><span>登 录</span></div>
+            <div>
+                <div id="loginState" class="login-state-trigger login-state-trigger2 login-state" title="选择在线状态">
+                    <div id="loginStateShow" class="login-state-show online">状态</div>
+                    <div class="login-state-down"></div>
+                    <div class="login-state-txt" id="login2qq_state_txt"></div>
+                </div>
+                <ul id="loginStatePanel" class="statePanel login-state" style="display: none">
+                    <li id="online" class="statePanel_li">
+                        <div class="stateSelect_icon online"></div>
+                        <div class="stateSelect_text">我在线上</div>
+                    </li>
+                    <li id="callme" class="statePanel_li">
+                        <div class="stateSelect_icon callme"></div>
+                        <div class="stateSelect_text">Q我吧</div>
+                    </li>
+                    <li id="away" class="statePanel_li">
+                        <div class="stateSelect_icon away"></div>
+                        <div class="stateSelect_text">离开</div>
+                    </li>
+                    <li id="busy" class="statePanel_li">
+                        <div class="stateSelect_icon busy"></div>
+                        <div class="stateSelect_text">忙碌</div>
+                    </li>
+                    <li id="silent" class="statePanel_li">
+                        <div class="stateSelect_icon silent"></div>
+                        <div class="stateSelect_text">请勿打扰</div>
+                    </li>
+                    <li id="hidden" class="statePanel_li">
+                        <div class="stateSelect_icon hidden"></div>
+                        <div class="stateSelect_text">隐身</div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
